@@ -34,7 +34,7 @@ Be able to create DataFrames and perform initial exploratory data analysis (view
 Load data from a CSV file into a Pandas DataFrame.
 Activities & Code Snippets:
 
-Advanced Python for Data Handling:
+Advanced Python for Data Handling: 
 
 Python
 
