@@ -1,0 +1,2 @@
+# Find a simple CSV dataset online (e.g., from Kaggle or a government data portal, look for something small and easy to understand). 
+# Load it into a Pandas DataFrame and use head(), info(), and describe() to explore it.

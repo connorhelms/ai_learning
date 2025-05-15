@@ -1,0 +1,1 @@
+# Calculate the mean, median (use np.median()), and sum of all elements in the 5x5 NumPy array.
