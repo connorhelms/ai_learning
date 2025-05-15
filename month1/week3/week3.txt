@@ -1,0 +1,37 @@
+Month 1: Foundations - Python, Math, and Data Handling
+
+Week 3: Essential Math for ML - Part 1
+
+Topics:
+
+Linear Algebra Basics:
+Scalars, Vectors, Matrices, Tensors: Definitions and representations.
+Scalar: A single number.
+Vector: An array of numbers (1D). Represents a point in space or a magnitude and direction.
+Matrix: A 2D array of numbers. Represents linear transformations, datasets.
+Tensor: A generalization to N-dimensional arrays (you've already seen 1D and 2D tensors with NumPy arrays).
+Vector Operations:
+Addition and Subtraction.
+Scalar Multiplication.
+Dot Product (Inner Product): Measures similarity/projection. Crucial in neural networks.
+Vector Norm (Magnitude/Length): L1 norm, L2 norm.
+Matrix Operations:
+Addition and Subtraction.
+Scalar Multiplication.
+Matrix Multiplication (Dot Product): Different from element-wise multiplication. Key for transforming data and in neural network layers.
+Transposition: Swapping rows and columns.
+Identity Matrix, Inverse Matrix (conceptual understanding – what they are, not necessarily how to calculate by hand for large matrices).
+Introduction to Calculus (Conceptual):
+Derivatives: Understanding the derivative as a rate of change or the slope of a function.
+Why it's important in ML: Used in optimization algorithms (like gradient descent) to find model parameters that minimize error.
+Gradients: A vector of partial derivatives for functions with multiple input variables.
+Why it's important in ML: Indicates the direction of the steepest ascent of a function. Gradient descent uses the negative of the gradient to find minima.
+(Focus on what they are and why they are used in ML, not on complex manual calculations of derivatives for now).
+Learning Objectives:
+
+Understand the definitions and differences between scalars, vectors, matrices, and tensors.
+Perform basic vector operations (addition, scalar multiplication, dot product, norm) using NumPy.
+Perform basic matrix operations (addition, scalar multiplication, matrix multiplication, transpose) using NumPy.
+Understand the concept of a derivative as a slope or rate of change.
+Understand the concept of a gradient as a multi-dimensional slope.
+Appreciate why derivatives and gradients are fundamental to training ML models (optimization).
