@@ -78,3 +78,31 @@ print("---"*30)
 
 #3. Matrix Operations with NumPy:
 
+A = np.array([[1,2], [3,4]])
+B = np.array([[5,6], [7,8]])
+print(f"Matrix A: \n{A}")
+print(f"Matrix B: \n{B}")
+print("---"*30)
+
+#Addition
+matrix_sum = A + B
+print(f"Sum of matrix A + B = {matrix_sum}.")
+print("---"*30)
+
+#Subtraction
+matrix_diff = A - B
+print(f"Difference of A - B = {matrix_diff}.")
+print("---"*30)
+
+#Scalar multiplication
+scalar_mult_matrix = s * A
+print(f"Scalar multiplication s * A = {scalar_mult_matrix}.")
+print("---"*30)
+
+#Element-wise multiplication
+element_wise_mult = A * B
+print(f"Element wise multiplication (not matrix) A * B = {element_wise_mult}.")
+print("---"*30)
+
+#Martix Multiplication (Dot product)
+#Method #1: np.dot()
