@@ -106,3 +106,68 @@ print("---"*30)
 
 #Martix Multiplication (Dot product)
 #Method #1: np.dot()
+matrix_mult1 = np.dot(A, B)
+# [[1*5+2*7, 1*6+2*8], [3*5+4*7, 3*6+4*8]] = [[19, 22], [43, 50]]
+print(f"Matrix Multiplication (np.dot(A, B)): \n{matrix_mult1}")
+print("---"*30)
+#Method 2: @ operator
+matrix_mult2 = A @ B
+print(f"Matrix multiplication (A @ B): \n{matrix_mult2}")
+print("---"*30)
+
+#Transposition
+A_transpose = A.T
+#or  np.transpose(A)
+print(f"Transpose of A: \n{A_transpose}")
+print("---"*30)
+
+#Identity Matrix
+# A square matrix with ones on the main diagonal and zeros elsewhere.
+# A @ I = A
+identity_2x2 = np.eye(2)
+print(f"Identity matrix (2x2): \n{identity_2x2}")
+print(f"A @ I: \n{A @ identity_2x2}")
+print("---"*30)
+
+# Inverse Matrix (Conceptual)
+# For a square matrix A, its inverse A_inv is such that A @ A_inv = I (Identity)
+# Not all matrices have an inverse.
+# NumPy can calculate it:
+try:
+    A_inv = np.linalg.inv(A)
+    print(f"Inverse of A: \n{A_inv}")
+    print(f"A @ A_inv (should be close to identity: \m{A @ A_inv})")
+except np.linalg.LinAlgError:
+    print("Matrix A is a singular and does not have an inverse.")
+print("---"*30)
+
+
+
+
+
+# Illustrative: A simple function and its "slope" idea
+# We won't calculate derivatives here, just visualize the concept.
+import matplotlib.pyplot as plt # We'll cover this more next week
+
+def f(x):
+    return x**2
+
+x_vals = np.linspace(-10, 10, 100)
+y_vals = f(x_vals)
+
+plt.plot(x_vals, y_vals, label='$f(x) = x^2$')
+plt.xlabel('x')
+plt.ylabel('f(x)')
+plt.title('Concept of a function and its slope')
+
+# At x=2, f(x)=4. The slope (derivative) is 2*2=4
+plt.plot(2, f(2), 'ro') #Martgk this point
+#Plot tangent line
+x_tan = np.array([0, 4])
+y_tan = 4 * (x_tan -2) + 4
+plt.plot(x_tan, y_tan, 'r--', label='Approximate tangent (slope=4) at x=2')
+plt.legend()
+plt.grid(True)
+plt.show()
+print("\nA plot illustrating a function and its tangent (slope) would be shown if Matplotlib is displayed.")
+print("The key idea is that the derivative gives the slope at a point.")
