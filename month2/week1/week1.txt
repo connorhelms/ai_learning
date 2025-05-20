@@ -1,0 +1,81 @@
+Week 1: Core ML Concepts
+Topics:
+
+What is Machine Learning? 🧠
+Traditional programming vs. ML.
+Learning from data: Examples and experience.
+Arthur Samuel's definition (computers learning without being explicitly programmed).
+Tom Mitchell's definition (Task, Performance, Experience).
+Types of Machine Learning:
+Supervised Learning:
+Learning from labeled data (input-output pairs).
+Regression: Predicting a continuous value (e.g., house price, temperature).
+Classification: Predicting a categorical label (e.g., spam/not spam, cat/dog).
+Unsupervised Learning:
+Learning from unlabeled data to find patterns or structure.
+Clustering: Grouping similar data points (e.g., customer segmentation).
+Dimensionality Reduction: Reducing the number of variables while preserving important information (e.g., feature compression).
+Association Rule Learning (briefly, e.g., market basket analysis).
+Reinforcement Learning (Overview):
+Learning through trial and error by interacting with an environment.
+Agents, states, actions, rewards.
+Examples (e.g., game playing, robotics). We won't dive deep into implementing this yet.
+Common ML Terminology: 🗣️
+Features (Predictors, Independent Variables): The input variables used to make a prediction.
+Labels (Target, Dependent Variable): The output variable you are trying to predict (in supervised learning).
+Dataset: A collection of data instances.
+Training Set: Data used to train the ML model.
+Test Set: Data used to evaluate the trained model's performance on unseen data.
+Validation Set: (Often used) Data used to tune model hyperparameters and make decisions during training.
+Model: The algorithm or mathematical representation learned from the data.
+Algorithm: The specific procedure used to learn the model (e.g., Linear Regression, Decision Tree).
+Overfitting: Model performs well on training data but poorly on unseen test data (memorized noise).
+Underfitting: Model performs poorly on both training and test data (too simple to capture patterns).
+Bias: The simplifying assumptions made by a model to make the target function easier to learn. High bias can cause underfitting.
+Variance: The amount that the estimate of the target function will change if different training data is used. High variance can cause overfitting.
+The Machine Learning Workflow (CRISP-DM / KDD Process - simplified): ⚙️
+Problem Definition & Goal Setting: What are you trying to solve? What are the success metrics?
+Data Collection: Gathering relevant data.
+Data Preprocessing & Preparation: Cleaning, transforming, and structuring data (this is a huge part, you've touched on some aspects in Month 1).
+Exploratory Data Analysis (EDA): Understanding the data through statistics and visualizations (you did this last week!).
+Model Selection: Choosing appropriate ML algorithms.
+Model Training: Fitting the model to the training data.
+Model Evaluation: Assessing model performance on the test/validation set.
+Hyperparameter Tuning: Optimizing model parameters.
+Deployment (Overview): Making the model available for use.
+Monitoring & Maintenance: Tracking performance and retraining as needed.
+Learning Objectives:
+
+Clearly define machine learning and differentiate it from traditional programming.
+Identify and describe the three main types of machine learning: supervised, unsupervised, and reinforcement learning.
+Differentiate between regression and classification tasks in supervised learning.
+Explain common ML terms like features, labels, training/test sets, overfitting, and underfitting.
+Outline the key steps involved in a typical machine learning workflow.
+Activities & Conceptual Examples:
+
+Read articles/watch videos explaining the difference between traditional programming and ML.
+
+Example: Instead of writing explicit rules for a spam filter (e.g., IF email contains "viagra" THEN spam), an ML approach learns these rules from thousands of emails labeled as spam or not spam.
+Find real-world examples for each type of ML:
+
+Supervised - Regression: Predicting tomorrow's stock price based on historical data.
+Supervised - Classification: Identifying if a medical image shows a tumor or not.
+Unsupervised - Clustering: Grouping news articles by topic.
+Reinforcement Learning: A self-driving car learning to navigate.
+Discuss Overfitting/Underfitting:
+
+Overfitting analogy: A student who memorizes answers for a specific exam but can't answer slightly different questions on the same topic.
+Underfitting analogy: A student who didn't study enough and can't answer any questions well.
+Map the ML Workflow steps to a hypothetical project:
+
+Project Idea: Predicting if a customer will click on an online ad.
+Problem: Increase ad click-through rate.
+Data Collection: User demographics, Browse history, ad features.
+Preprocessing: Handle missing values, convert text to numbers.
+EDA: Visualize click patterns, feature distributions.
+Model Selection: Try Logistic Regression, Decision Tree.
+Training: Feed data to the chosen model.
+Evaluation: Check accuracy on unseen data.
+Tuning: Adjust model settings.
+Deployment: Integrate model into the ad serving system.
+Monitoring: Track click rates, retrain if performance drops.

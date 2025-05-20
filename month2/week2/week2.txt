@@ -1,0 +1,73 @@
+Week 2: Supervised Learning - Regression
+Topics:
+
+Understanding Regression Problems:
+What are continuous values? (e.g., price, temperature, height, sales figures).
+Differentiating regression from classification (predicting categories).
+Real-world examples of regression tasks.
+Linear Regression:
+Simple Linear Regression:
+The equation: y=
+beta_0+
+beta_1x+
+epsilon
+y: Dependent variable (target)
+x: Independent variable (feature)
+beta_0: Intercept (bias)
+beta_1: Coefficient (weight) for feature x
+epsilon: Error term
+Visualizing the line of best fit.
+How it works: Finding the line that minimizes the sum of squared errors (Ordinary Least Squares - OLS).
+Multiple Linear Regression:
+Extending to multiple input features: y=
+beta_0+
+beta_1x_1+
+beta_2x_2+...+
+beta_nx_n+
+epsilon
+Assumptions of Linear Regression (brief overview):
+Linearity: Relationship between features and target is linear.
+Independence: Observations are independent.
+Homoscedasticity: Constant variance of errors.
+Normality: Errors are normally distributed (more for statistical inference).
+Implementation with Scikit-learn:
+Introduction to Scikit-learn: Python's go-to ML library.
+Key steps:
+Importing the model (LinearRegression from sklearn.linear_model).
+Preparing data (features X and target y).
+Splitting data into training and testing sets (train_test_split from sklearn.model_selection).
+Creating an instance of the model.
+Fitting the model to the training data (model.fit(X_train, y_train)).
+Making predictions on the test data (model.predict(X_test)).
+Accessing model parameters (coefficients model.coef_ and intercept model.intercept_).
+Model Evaluation Metrics for Regression:
+Mean Absolute Error (MAE): MAE=
+frac1n
+sum_i=1 
+n
+ ∣y_i−
+haty_i∣
+Average absolute difference between predicted and actual values. Interpretable in the original units.
+Mean Squared Error (MSE): MSE=
+frac1n
+sum_i=1 
+n
+ (y_i−
+haty_i) 
+2
+ 
+Average of the squared differences. Penalizes larger errors more.
+Root Mean Squared Error (RMSE): RMSE=
+sqrtMSE
+Square root of MSE. Interpretable in the original units and penalizes large errors.
+R-squared (R²) or Coefficient of Determination:
+Proportion of the variance in the dependent variable that is predictable from the independent variable(s).
+Ranges from 0 to 1 (or sometimes negative if the model is worse than a horizontal line). Higher is generally better.
+Using sklearn.metrics to calculate these.
+Learning Objectives:
+
+Clearly define regression and identify regression problems.
+Understand the basic principles and mathematical representation of Simple and Multiple Linear Regression.
+Implement a Linear Regression model using Scikit-learn, including data splitting, training, and prediction.
+Understand and calculate key evaluation metrics for regression models (MAE, MSE, RMSE, R²).
+Interpret the results of a regression model and its evaluation metrics.
