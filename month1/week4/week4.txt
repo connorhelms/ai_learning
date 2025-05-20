@@ -1,0 +1,38 @@
+Week 4: Essential Math for ML - Part 2 & Data Visualization
+
+Topics:
+
+Probability & Statistics Basics:
+Basic Probability Concepts:
+Sample space, events, probability of an event.
+Conditional probability (briefly, intuitive understanding).
+Independent events.
+Descriptive Statistics:
+Measures of Central Tendency: Mean, Median, Mode.
+Measures of Dispersion/Variability: Variance, Standard Deviation, Range, Percentiles/Quartiles.
+Probability Distributions (Conceptual Introduction):
+Normal Distribution (Gaussian): Its characteristics and importance.
+Binomial Distribution (briefly).
+Why this is important for ML: Understanding data distributions, feature engineering, model evaluation, hypothesis testing (more advanced).
+Introduction to Data Visualization with Matplotlib:
+Why visualize data? (Exploratory Data Analysis - EDA, presenting results).
+Basic plots with Matplotlib:
+Line plots.
+Scatter plots.
+Histograms.
+Bar charts.
+Customizing plots: Titles, labels, colors, legends.
+Subplots for multiple visualizations.
+Introduction to Seaborn (for enhanced statistical visualizations):
+Building on Matplotlib.
+Creating more aesthetically pleasing and informative statistical plots with less code.
+Examples: Enhanced scatter plots, distribution plots (distplot/histplot, kdeplot), box plots, violin plots.
+Learning Objectives:
+
+Understand basic probability terms and how to calculate simple probabilities.
+Calculate and interpret common descriptive statistics (mean, median, mode, variance, standard deviation).
+Recognize the importance and basic shape of a Normal distribution.
+Create and customize basic plot types (line, scatter, histogram, bar) using Matplotlib.
+Understand how to create multiple plots in one figure using subplots.
+Create common statistical visualizations using Seaborn (e.g., histograms, KDE plots, box plots).
+Appreciate the role of visualization in understanding data and ML results.
