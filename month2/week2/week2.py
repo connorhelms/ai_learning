@@ -50,5 +50,34 @@ print("---"*30)
 # starting from a base of model.intercept_ if hours_studied were 0 (which might not be meaningful here).
 
 # --- 7. Make Predictions on the Test Data ---
+y_pred = model.predict(X_test)
+
+# --- 8. Visualize the Results (Line of Best Fit) ---
+plt.figure(figsize=(8, 6))
+plt.scatter(X_test, y_test, color='blue', label='Actual Test Data')
+plt.plot(X_test, y_test, color='red', linewidth=2, label='Predicted Line on Best Fit')
+plt.scatter(X_train, y_train, color='green', label='Training Data', alpha=0.3)
+plt.xlabel('Hours Studied')
+plt.ylabel('Exam Score')
+plt.title("Linear Regression Fit")
+plt.legend()
+plt.show()
+
+# --- 9. Evaluate the Model ---
+print("--- Model Evaluation ---")
+mae = metrics.mean_absolute_error(y_test, y_pred)
+mse = metrics.mean_squared_error(y_test, y_pred)
+rmse = np.sqrt(mse)
+r2 = metrics.r2_score(y_test, y_pred)
+
+print(f"Mean Absolute Error: {mae:.2f}")
+print(f"Mean Squared Error: {mse:.2f}")
+print(f"Root Mean Squared Error: {rmse:.2f}")
+print(f"R-squared: {r2:.2f}")
+print("---"*30)
+# Interpretation of R-squared: Approx. {r2*100:.0f}% of the variance in exam scores
+# can be explained by the hours studied, according to this model on this test set.
+
+
 
 
