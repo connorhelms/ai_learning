@@ -1,0 +1,60 @@
+Month 2: Introduction to Machine Learning Concepts and Scikit-learn
+Week 3: Supervised Learning - Classification
+Topics:
+
+Understanding Classification Problems:
+What are categorical labels/classes? (e.g., "spam"/"not spam", "cat"/"dog"/"bird", "disease"/"no disease").
+Binary Classification (two classes) vs. Multiclass Classification (more than two classes).
+Real-world examples of classification tasks.
+Logistic Regression:
+Despite its name, Logistic Regression is a classification algorithm (not regression).
+How it works:
+Models the probability that an input belongs to a particular category.
+Uses the sigmoid (logistic) function to map any real-valued number into a probability (a value between 0 and 1).
+Equation for binary classification (simplified): P(Y=1∣X)= 
+1+e 
+−(β 
+0
+​
+ +β 
+1
+​
+ X 
+1
+​
+ +...+β 
+n
+​
+ X 
+n
+​
+ )
+ 
+1
+​
+ 
+A decision boundary is learned to separate classes.
+Use cases: Spam detection, medical diagnosis (e.g., likelihood of disease), credit scoring.
+Implementation with Scikit-learn (sklearn.linear_model.LogisticRegression).
+Getting predicted probabilities (predict_proba()).
+K-Nearest Neighbors (KNN):
+A non-parametric, instance-based learning algorithm (lazy learner).
+How it works:
+To classify a new data point, it looks at the 'K' closest labeled data points (neighbors) in the training set.
+The new data point is assigned the class that is most common among its K neighbors (majority vote).
+Requires a distance metric (e.g., Euclidean distance).
+The choice of 'K' is crucial.
+Use cases: Recommendation systems, image recognition (simple cases), anomaly detection.
+Pros: Simple to understand and implement.
+Cons: Can be computationally expensive for large datasets, sensitive to feature scaling and irrelevant features, needs a good choice of K.
+Implementation with Scikit-learn (sklearn.neighbors.KNeighborsClassifier).
+Importance of feature scaling for KNN.
+Learning Objectives:
+
+Clearly define classification and differentiate it from regression.
+Understand the basic principles of Logistic Regression, including the role of the sigmoid function.
+Implement Logistic Regression using Scikit-learn for binary or multiclass classification.
+Interpret probability outputs from a Logistic Regression model.
+Understand the working principle of the K-Nearest Neighbors algorithm.
+Implement KNN using Scikit-learn.
+Recognize the importance of choosing 'K' and scaling features for KNN.
